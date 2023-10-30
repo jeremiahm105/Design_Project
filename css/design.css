@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Anton&display=swap');
+
+:root {
+    --clr-red: #E6563B;
+    --clr-orange: #EB9D3A;
+    --clr-green: #7CB06C;
+    --clr-blue: #00ABA9;
+    --clr-light-grey: #F0F0F0;
+    --clr-dark-grey: #E6E6E6;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    background-color: var(--clr-dark-grey);
+}
+
+body {
+    background-color: var(--clr-light-grey);
+}
+
+.col-1{
+    font-size: 10px;
+    padding: unset;
+}
+
+.red {
+    background-color: var(--clr-red);
+}
+.orange{
+    background-color: var(--clr-orange);
+}
+.green{
+    background-color: var(--clr-green);
+}
+.blue{
+    background-color: var(--clr-blue);
+}
+
+.container-hero {
+    font-family: "Anton", sans-serif;
+    border-bottom: 2px solid grey;
+}
+
+.container-hero h1 h3 {
+    font-size: 60px;
+}
+.card {
+    width:380px;
+    height: 245px;
+    border: none;
+    padding: unset;
+
+}
+.card-img-top {
+    width: 100%;
+    max-height: 235px;
+    border: 5px solid var(--clr-light-grey);;
+    object-fit: cover;
+}
+.card-text {
+    font-size: 12px;
+    font-family: "Abel", sans-serif;
+}
+
+h6 {
+    font-family: "Abel", sans-serif;
+    height: 18px;
+}
+
+.mission-b{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 60px;
+    border: 5px solid white;
+    color: var(--clr-light-grey);
+}
+
+.mission-sm {
+    height: 20px;
+    width: 20px;
+    border-radius: 60px;
+    font-family: "Anton",sans-serif;
+}
+
+span{
+    font-size: 10px;
+    flex-grow: 1;
+    text-align: center;
+    background-color: inherit;
+    border-radius: 20px;
+}
+
+.sel-work {
+    font-family: "Abel", sans-serif;
+    width: 75%;
+
+}
+
+section{
+    font-family: "Anton", sans-serif;
+    font-size: 30px;
+    width: 35%;
+}
+
+section .text{
+    font-family: "Abel", sans-serif;
+    font-size: 18px;
+}
+section img{
+    width: 70px;
+    height: 70px;
+    border: 5px solid var(--clr-light-grey);;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .container-hero h3{
+        font-size: 45px;
+    }
+    div.card {
+        width: 230px;
+        height: 170px;
+    }
+    img.card-img-top {
+        width: 245px;
+        height: 170px;
+        object-fit: contain;
+    }.nav-link {
+         font-size: 14px;
+     }
+    section h1{
+        font-size: 60px;
+    }
+
+}
+@media screen and (min-width: 1200px) {
+    .container-hero h1{
+        font-size: 50px;
+    }
+
+    .container-hero h3{
+        font-size: 40px;
+    }
+    div.card {
+        width: 345px;
+        height: 270px;
+    }
+    img.card-img-top {
+        width: 345px;
+        height: 270px;
+        object-fit: contain;
+    }
+    .nav-link {
+        font-size: 12px;
+    }
+    .container {
+        max-width: 1900px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    header.row{
+        flex-grow: unset;
+    }
+    h6 {
+        margin: unset;
+        margin-bottom: 12px;
+    }
+    .card {
+        width: 235px;
+        height: 160px;
+
+
+    }
+    img.card-img-top {
+        width: 235px;
+        height: 140px;
+        object-fit: cover;
+    }
+    a.navbar-brand {
+        display: none;
+    }
+
+    .sel-work {
+        flex-grow: 1;
+    }
+
+}
+@media screen and (max-width: 560px){
+    h1{
+        font-size: 75px;
+    }
+    .container-hero h3{
+        font-size: 40px;
+    }
+    .mission{
+        width: 270px;
+        display: flex;
+        height: 235px;
+    }
+    .container-hero{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        border-bottom: unset;
+    }
+    .sel-work{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .sel-work ul li {
+        list-style: none;
+    }
+    .card-body{
+        width: 100%;
+    }
+    .card{
+        width: 90%;
+        height: 170px;
+    }
+    img.card-img-top {
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
